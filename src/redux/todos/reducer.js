@@ -55,7 +55,7 @@ const todosReducer = (state = initialState, actions) => {
         };
       });
     case CLEARCOMPLETED:
-      return state.filter((todo) => todo.completed !== false);
+      return state.filter((todo) => !todo.completed);
     default:
       return state;
   }
