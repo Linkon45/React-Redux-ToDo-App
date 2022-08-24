@@ -7,6 +7,7 @@ export const initialState = [
   {
     id: 2,
     text: "Bye world",
-    completed: true,
+    completed: false,
+    color: "red",
   },
 ];

@@ -46,7 +46,7 @@ const todosReducer = (state = initialState, actions) => {
         };
       });
     case DELETED:
-      return state.filter((todo) => todo.id !== actions.payload.todoId);
+      return state.filter((todo) => todo.id !== actions.payload);
     case ALLCOMPLETED:
       return state.map((todo) => {
         return {
